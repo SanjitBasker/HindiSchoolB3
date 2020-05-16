@@ -22,9 +22,14 @@
     
 //    first set of questions
     $y=0;
-    $questions1 = array("cold drink", "turnip", "hexagon", "truth", "elephant");
+    $questions1 = array("cold drink", "turnip", "hexagon", "truth", "elephant"); //editable
+    // contains all the prompts for this set of questions
+    
     $countquestions+=sizeof($questions1);
-    $choices1=array("श", "ष", "स", "ह");
+    
+    $choices1=array("श", "ष", "स", "ह"); //editable
+    // contains all the answer choices for this set of questions
+    
     $nums = array(0,1,2,3,4);
     $nums2 = array(0,1,2,3,4);
     for ($i = 0; $i < 5; $i++){
