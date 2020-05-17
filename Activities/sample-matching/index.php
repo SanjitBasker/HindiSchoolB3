@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" type="image/png" href="../fav.png"/>
     <meta charset="UTF-8">
-    <title>Letters Activity</title>
+    <title>Words Activity</title>
 </head>
 
 <body>
@@ -19,12 +19,9 @@
 <form>
 <table>
     <?PHP
-    //initial variables
+    matching(array("Come (you).", "(I/she) came.", "(We) came.", "(I/she) went."), 
+             array("आओ", "आई", "आए", "गई"));
     
-    //question sets
-    modMatching(array("pomegranate", "pineapple", "mango", "plum", "tamarind"),
-                   array("अ", "आ", "इ"),
-                   array("अ", "अ", "आ", "आ", "इ"));
     ?>
     
     
@@ -44,7 +41,7 @@
             $correct+= ($submitted[$i]==$answers[$i]);
         }
         echo "<p>The score is: ".$correct."/".sizeof($answers)."</p>";
-        if ($correct == 8){
+        if ($correct == sizeof($answers)){
             echo "<p>Good job! Mark Google Classroom assignment as done.</p>";
         }
     }

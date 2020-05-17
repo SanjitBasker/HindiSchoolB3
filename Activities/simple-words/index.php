@@ -13,18 +13,21 @@
 <body>
 
 
-<h1>Letters Activity</h1>
+<h1>Words Activity - Group 1</h1>
 <p class='instructions'>
-    Select the first letter of each word in Hindi. Use Research material posted in our Google Classroom if you need a reminder for any of the words.</p>
+    Select the Hindi word that corresponds to each of the English words.</p>
 <form>
 <table>
     <?PHP
     //initial variables
     
     //question sets
-    modMatching(array("pomegranate", "pineapple", "mango", "plum", "tamarind"),
-                   array("अ", "आ", "इ"),
-                   array("अ", "अ", "आ", "आ", "इ"));
+    modMatching(array("Come (you).", "(I/she) came.", "(We) came.", "(I/she) went."),
+                   array("आओ", "आई", "आए", "गई"),
+                   array("आओ", "आई", "आए", "गई"));
+    modMatching(array("Today", "Fire", "Eight", "Number", "Body Part"),
+                   array("आज", "आग", "आठ", "अंक", "अंग"),
+                   array("आज", "आग", "आठ", "अंक", "अंग"));
     ?>
     
     
