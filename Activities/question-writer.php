@@ -56,7 +56,7 @@
                 $x="";
             }
             echo "<tr>";
-            echo "<td><input type='text' name = 'ans".($GLOBALS['questionCount']+$b+1)."' value=".$_GET['ans'.($GLOBALS['questionCount']+$b+1)]."></td>";
+            echo "<td><input type='text' name = 'ans".($GLOBALS['questionCount']+$b+1)."' value=".$x."></td>";
             echo "<td><label class='option'>".$terms[$b]."  "."</label></td>";
 
             echo "<td>".$letters[$i].". ".$definitions[$i]."</td>";

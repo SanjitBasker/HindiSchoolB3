@@ -19,9 +19,13 @@
 <form>
 <table>
     <?PHP
+    echo "<tr><td class='boundary' colspan=3>Section 1</td></tr>";
     matching(array("Come (you).", "(I/she) came.", "(We) came.", "(I/she) went."), 
              array("आओ", "आई", "आए", "गई"));
-    
+    echo "<tr><td class='boundary' colspan=3>Section 2</td></tr>";
+    matching(array("Today", "Fire", "Eight", "Number", "Body Part"),
+             array("आज", "आग", "आठ", "अंक", "अंग"));
+
     ?>
     
     
@@ -34,7 +38,13 @@
     if (isset($_GET['submit'])){
         $submitted=array();
         for ($i = 1; $i<=$questionCount; $i++){
-            array_push($submitted, $_GET['ans'.$i]);
+            if (isset($_GET['ans'.$i])){
+                $x = $_GET['ans'.$i];
+            }
+            else {
+                $x = "0";
+            }
+            array_push($submitted, $x);
         }
         $correct = 0;
         for ($i = 0; $i < sizeof($submitted); $i ++){

@@ -74,6 +74,9 @@ table {
 th, td {
   border-bottom: 1px solid #ddd;
 }
+.boundary{
+    border-bottom: 2px solid rgb(256,256,256);
+}
 .option{
     font-family: Georgia, serif;
     font-size:49px
